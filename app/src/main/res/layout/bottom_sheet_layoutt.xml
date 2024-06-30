@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+  >
+
+
+
+        <TextView
+            android:id="@+id/TitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/select_childs_for_food"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/cancelIV"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/cross"
+            app:layout_constraintBottom_toBottomOf="@+id/TitleTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TitleTV" />
+
+        <ImageView
+            android:id="@+id/BoysIV"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/boys"
+            app:layout_constraintStart_toStartOf="@+id/TitleTV"
+            app:layout_constraintTop_toBottomOf="@+id/TitleTV" />
+
+
+        <TextView
+            android:id="@+id/BoysTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/baqar_leax"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/BoysIV"
+            app:layout_constraintStart_toEndOf="@+id/BoysIV"
+            app:layout_constraintTop_toTopOf="@+id/BoysIV" />
+
+        <ImageView
+            android:id="@+id/GirlIV"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/girls"
+            app:layout_constraintStart_toStartOf="@+id/BoysIV"
+            app:layout_constraintTop_toBottomOf="@+id/BoysIV" />
+
+
+        <TextView
+            android:id="@+id/GirlTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/borys"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/GirlIV"
+            app:layout_constraintStart_toEndOf="@+id/GirlIV"
+            app:layout_constraintTop_toTopOf="@+id/GirlIV" />
+
+
+        <ImageView
+            android:id="@+id/BothGenderIV"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/both_gender"
+            app:layout_constraintStart_toStartOf="@+id/GirlIV"
+            app:layout_constraintTop_toBottomOf="@+id/GirlIV" />
+
+
+        <TextView
+            android:id="@+id/BothGenderTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/both_childs"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/BothGenderIV"
+            app:layout_constraintStart_toEndOf="@+id/BothGenderIV"
+            app:layout_constraintTop_toTopOf="@+id/BothGenderIV" />
+
+
+    <TextView
+        android:id="@+id/ContinueTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Continue"
+        android:textColor="@color/red_color"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BothGenderIV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

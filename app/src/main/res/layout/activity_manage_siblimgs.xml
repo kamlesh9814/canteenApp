@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ManageSiblingsActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/BackIV"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/black_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/TitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/manage_siblings"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/BackIV"
+            app:layout_constraintStart_toEndOf="@+id/BackIV"
+            app:layout_constraintTop_toTopOf="@+id/BackIV" />
+
+
+        <TextView
+            android:id="@+id/StudentNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student_name"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintTop_toBottomOf="@+id/BackIV"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_30sdp" />
+
+
+        <EditText
+            android:id="@+id/etStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/cornours_drawable"
+            android:imeOptions="actionNext"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="textPersonName"
+            android:paddingStart="25dp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingEnd="50dp"
+            android:hint="@string/student_name"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/StudentNameTV" />
+
+
+        <TextView
+            android:id="@+id/StudentClassTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student_class"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintTop_toBottomOf="@+id/etStudentName"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp" />
+
+
+        <EditText
+            android:id="@+id/etStudentClass"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/cornours_drawable"
+            android:imeOptions="actionNext"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="text"
+            android:paddingStart="25dp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingEnd="50dp"
+            android:hint="@string/student_class"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/StudentClassTV"/>
+
+
+        <TextView
+            android:id="@+id/SectionTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/section"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintTop_toBottomOf="@+id/etStudentClass"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp" />
+
+
+        <EditText
+            android:id="@+id/etSection"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/cornours_drawable"
+            android:imeOptions="actionNext"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="text"
+            android:paddingStart="25dp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingEnd="50dp"
+            android:hint="@string/enter_section"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/SectionTV"/>
+
+
+
+        <TextView
+            android:id="@+id/RollNumberTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/roll_number"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintTop_toBottomOf="@+id/etSection"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp" />
+
+
+        <EditText
+            android:id="@+id/etRollNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/cornours_drawable"
+            android:imeOptions="actionNext"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="number"
+            android:paddingStart="25dp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingEnd="50dp"
+            android:hint="@string/enter_roll_number"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/RollNumberTV"/>
+
+
+
+        <TextView
+            android:id="@+id/UploadTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/upload_id_card"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@+id/etRollNumber"
+            app:layout_constraintTop_toBottomOf="@+id/etRollNumber" />
+
+
+
+        <EditText
+            android:id="@+id/UploadET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/cornours_drawable"
+            android:imeOptions="actionNext"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="text"
+            android:paddingStart="25dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingEnd="16sp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/UploadTV" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/upload"
+            android:layout_marginStart="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/UploadET"
+            app:layout_constraintStart_toStartOf="@+id/UploadET"
+            app:layout_constraintTop_toTopOf="@+id/UploadET" />
+
+        <TextView
+            android:id="@+id/ShiftTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shift"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintTop_toBottomOf="@+id/UploadET"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp" />
+
+
+        <EditText
+            android:id="@+id/ShiftET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/cornours_drawable"
+            android:imeOptions="actionNext"
+            android:clickable="false"
+            android:focusable="false"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="text"
+            android:paddingStart="25dp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingEnd="16sp"
+            android:hint="@string/select_shift"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/ShiftTV" />
+
+
+        <ImageView
+            android:id="@+id/DropDoneSchoolAddress"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:src="@drawable/drop_done"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/ShiftET"
+            app:layout_constraintEnd_toEndOf="@+id/ShiftET"
+            app:layout_constraintTop_toTopOf="@+id/ShiftET" />
+
+
+        <TextView
+            android:id="@+id/SchoolNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/school_name"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintTop_toBottomOf="@+id/ShiftET"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp" />
+
+
+        <EditText
+            android:id="@+id/SchoolNameET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/cornours_drawable"
+            android:imeOptions="actionNext"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="text"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingStart="25dp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingEnd="16sp"
+            android:hint="@string/school_name"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/SchoolNameTV" />
+
+
+        <ImageView
+            android:id="@+id/DropDone"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:src="@drawable/drop_done"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/SchoolNameET"
+            app:layout_constraintEnd_toEndOf="@+id/SchoolNameET"
+            app:layout_constraintTop_toTopOf="@+id/SchoolNameET" />
+
+
+
+        <TextView
+            android:id="@+id/SchoolAddressTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/school_address"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintTop_toBottomOf="@+id/SchoolNameET"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp" />
+
+
+        <EditText
+            android:id="@+id/SchoolAddressET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/cornours_drawable"
+            android:imeOptions="actionDone"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="text"
+            android:paddingStart="25dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingEnd="16sp"
+            android:hint="@string/select_address"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/SchoolAddressTV" />
+
+
+        <ImageView
+            android:id="@+id/DropDone1"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:src="@drawable/drop_done"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/SchoolAddressET"
+            app:layout_constraintEnd_toEndOf="@+id/SchoolAddressET"
+            app:layout_constraintTop_toTopOf="@+id/SchoolAddressET" />
+
+
+        <TextView
+            android:id="@+id/SaveLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/cornours_drawable"
+            android:gravity="center"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:backgroundTint="@color/red_color"
+            app:layout_constraintTop_toBottomOf="@+id/SchoolAddressET"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

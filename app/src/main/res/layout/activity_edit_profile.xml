@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EditProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/BackIV"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/black_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/TitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/edit_profile"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16ssp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/BackIV"
+        app:layout_constraintStart_toEndOf="@+id/BackIV"
+        app:layout_constraintTop_toTopOf="@+id/BackIV" />
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ProfileIV"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/girl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BackIV"
+        app:riv_corner_radius="@dimen/_25sdp" />
+
+
+    <ImageView
+        android:id="@+id/cameraIv"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:src="@drawable/camera_view"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="-5dp"
+        app:layout_constraintEnd_toEndOf="@+id/ProfileIV"
+        app:layout_constraintTop_toTopOf="@+id/ProfileIV" />
+
+
+    <EditText
+        android:id="@+id/etNameUser"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:background="@drawable/cornours_drawable"
+        android:imeOptions="actionNext"
+        android:fontFamily="@font/poppins_medium"
+        android:inputType="textPersonName"
+        android:paddingStart="50dp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingEnd="16sp"
+        android:hint="@string/edit_user_name"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@id/ProfileIV" />
+
+    <ImageView
+        android:id="@+id/emailIV"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:src="@drawable/user"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/etNameUser"
+        app:layout_constraintStart_toStartOf="@+id/etNameUser"
+        app:layout_constraintTop_toTopOf="@+id/etNameUser" />
+
+
+    <TextView
+        android:id="@+id/SaveLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/cornours_drawable"
+        android:gravity="center"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:backgroundTint="@color/red_color"
+        app:layout_constraintTop_toBottomOf="@+id/etNameUser"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
